@@ -1,1 +1,1 @@
-# g-rsel-finalproje
+# gorsel-finalproje
