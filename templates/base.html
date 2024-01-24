@@ -1,0 +1,48 @@
+{% include "parts/_header.html" %}
+
+{% include "parts/_menu.html" %}
+<div class="container-fluid text-left">    
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+            <div class="d-flex flex-column flex-shrink-4 p-2 bg-body-tertiary "  style="width: 250px; min-height:500px; height:100%; "  >
+        
+                <hr>
+                <ul class="nav  nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="/kitapekle" class="nav-link link-body-emphasis " aria-current="page">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                        Kitap ekle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/kitap" class="nav-link link-body-emphasis">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                        Kitaplar
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+                
+            </div>  
+        
+      
+        </div>
+      <div class="col-sm-8 text-left"> 
+        {% block content %}
+        
+        {% endblock %}
+      </div>
+      <div class="col-sm-2 sidenav">
+        
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% include "parts/_footer.html" %}

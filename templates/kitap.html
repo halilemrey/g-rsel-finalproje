@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Kitap sayfası</h2>
+  
+<hr>
+
+
+{% for k in veri %}
+
+
+  
+<div class="card" style="width: 15rem;">
+  
+
+  <div class="card-body">
+    <h5 class="card-title">Kitabın adı: {{k[1]}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Yazarı: {{k[2]}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="kitapdetay/{{k[0]}}" class="btn btn-primary">Kitap detayı</a>
+    <a href="kitapsil/{{k[0]}}" class="btn btn-primary">Sil</a>
+    <a href="kitapguncelle/{{k[0]}}" class="btn btn-primary">Güncelle</a>
+  </div>
+</div>
+  
+
+{% endfor%}
+
+
+
+
+{% endblock %}
